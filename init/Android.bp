@@ -1,0 +1,14 @@
+cc_library_static {
+    name: "libinit_P3T",
+    header_libs: [
+        "libbase_headers",
+    ],
+    cflags: [
+        "-Wall",
+    ],
+    static_libs: [
+        "libbase",
+    ],
+    srcs: ["init_P3T.cpp"],
+    recovery_available: true,
+}
