@@ -159,7 +159,7 @@ BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Screen density
-TARGET_SCREEN_DENSITY := 320
+#TARGET_SCREEN_DENSITY := 320
 
 # Resolution
 TW_THEME := landscape_hdpi
@@ -214,7 +214,7 @@ TW_DEFAULT_BRIGHTNESS := 130
 TW_DEVICE_VERSION := DOOGEE T30 Max - lopestom
 #TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone29/temp
 #TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone1/temp
-#TW_NO_HAPTICS := true
+TW_NO_HAPTICS := true
 TW_EXTRA_LANGUAGES := false
 TARGET_USES_MKE2FS := true
 
