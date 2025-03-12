@@ -8,8 +8,7 @@ on init
     export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
     setprop crypto.ready 1
  
-    mkdir /mnt/vendor 0755 system system
-    mkdir /mnt/vendor/persist 0700 system system
+    mkdir /mnt/vendor/persist
     mount ext4 /dev/block/by-name/persist /mnt/vendor/persist
 
 on fs
