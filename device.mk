@@ -35,11 +35,13 @@ AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS := \
     boot \
     dtbo \
+    lk \
     system \
     system_ext \
     product \
     vendor \
     odm \
+    odm_dlkm \
     vendor_boot \
     vendor_dlkm \
     vbmeta \
