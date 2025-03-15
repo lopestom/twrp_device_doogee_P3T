@@ -103,6 +103,25 @@ on property:crypto.ready=0
     stop vendor.keymint-beanpod
     stop vendor.gatekeeper-1-0
 
+on post-fs-data
+## Custom pos-fs area (START)
+# Please add custom fs operation below
+# Add by MTK
+    # Touch Panel
+    # chmod 0664 /dev/touch
+    chown root diag /sys/module/tpd_setting/parameters/tpd_calmat
+    chown root diag /sys/module/tpd_setting/parameters/tpd_em_debounce_time
+    chown root diag /sys/module/tpd_setting/parameters/tpd_mode
+    chown root diag /sys/module/tpd_setting/parameters/tpd_em_debounce_time0
+    chown root diag /sys/module/tpd_setting/parameters/tpd_em_debounce_time1
+    chown root diag /sys/module/tpd_setting/parameters/tpd_em_spl_num
+    chown root diag /sys/module/tpd_setting/parameters/tpd_em_pressure_threshold
+    chown root diag /sys/module/tpd_setting/parameters/tpd_em_auto_time_interval
+    chown root diag /sys/module/tpd_setting/parameters/tpd_em_sample_cnt
+    chown root diag /sys/module/tpd_setting/parameters/tpd_em_asamp
+    chown root diag /sys/module/tpd_debug/parameters/tpd_em_log
+    chown root diag /sys/module/tpd_debug/parameters/tpd_em_log_to_fs
+
 on boot
     start health-hal-2-1
     setprop sys.usb.config adb
