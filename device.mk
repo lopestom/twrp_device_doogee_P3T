@@ -40,11 +40,12 @@ AB_OTA_PARTITIONS := \
     product \
     vendor \
     odm \
+    vendor_boot \
+    vendor_dlkm \
     vbmeta \
-    vbmeta_system \
-    vbmeta_vendor
-    
-    
+    vbmeta_vendor \
+    vbmeta_system
+
 # Update engine
 PRODUCT_PACKAGES += \
     checkpoint_gc \
